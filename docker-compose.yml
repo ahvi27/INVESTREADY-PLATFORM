@@ -1,0 +1,9 @@
+services:
+  investready:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - investready-data:/app/data
+volumes:
+  investready-data:
