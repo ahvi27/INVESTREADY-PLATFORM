@@ -1,40 +1,63 @@
-# InvestReady — Investment Attraction Intelligence Platform
+<div align="center">
 
-InvestReady is a polished Python decision-support application for investment-promotion agencies, industrial parks, and economic-development teams. It turns an investor pipeline into a transparent, prioritized portfolio of opportunities.
+# 📊 InvestReady
+
+**Investment-attraction intelligence for stronger, more transparent pipelines.**
+
+![Python](https://img.shields.io/badge/Python-071A2D?style=for-the-badge&logo=python&logoColor=F7DF1E)
+![Streamlit](https://img.shields.io/badge/Streamlit-071A2D?style=for-the-badge&logo=streamlit&logoColor=FF4B4B)
+![SQLite](https://img.shields.io/badge/SQLite-071A2D?style=for-the-badge&logo=sqlite&logoColor=22D3EE)
+![Docker](https://img.shields.io/badge/Docker-071A2D?style=for-the-badge&logo=docker&logoColor=2496ED)
+
+</div>
+
+## Overview
+
+InvestReady is a decision-support platform for investment-promotion agencies, industrial parks, and economic-development teams. It converts an investor pipeline into an explainable, prioritized portfolio.
+
+<!-- Upload a real screenshot as docs/investready-dashboard.png, then uncomment:
+![InvestReady executive dashboard](docs/investready-dashboard.png)
+-->
 
 ## Features
 
-- Executive dashboard for pipeline value, jobs, stages, and sectors
-- Investor CRM with filtering, search, notes, contacts, and ownership
-- Transparent weighted scoring with seven investment criteria
+- Executive pipeline dashboard
+- Searchable investor CRM and stage management
+- Seven-criterion weighted opportunity scoring
 - Automatic priority classification
-- Side-by-side opportunity comparison with radar charts
-- Follow-up tracker with overdue indicators
+- Side-by-side comparison with radar charts
+- Follow-up tracker with overdue alerts
 - CSV exports and management summaries
-- Persistent SQLite database and realistic demo dataset
-- Automated tests, Docker, and GitHub Actions
+- Persistent SQLite database and demo dataset
+- Automated tests, Docker, and CI support
+
+## Technology
+
+`Python` · `Streamlit` · `Pandas` · `Plotly` · `SQLite` · `Pytest` · `Docker`
 
 ## Run locally
 
 ```bash
+git clone https://github.com/ahvi27/INVESTREADY-PLATFORM.git
+cd INVESTREADY-PLATFORM
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt
 python -m streamlit run app.py
 ```
 
-Open http://localhost:8501. Demo data is inserted automatically the first time the app runs.
+Open `http://localhost:8501`. Demo data is created automatically.
 
-## Run tests
-
-```bash
-python -m pytest -q
-```
-
-## Docker
+### Docker
 
 ```bash
 docker compose up --build
+```
+
+### Tests
+
+```bash
+python -m pytest -q
 ```
 
 ## Scoring model
@@ -49,17 +72,6 @@ docker compose up --build
 | Technology transfer | 10% |
 | Implementation readiness | 5% |
 
-The model is deliberately transparent. Organizations should calibrate the weights and normalization thresholds to match their approved investment strategy.
+## Author
 
-## GitHub description
-
-> Python investment-attraction intelligence platform with investor scoring, pipeline analytics, opportunity comparison, follow-up tracking, SQLite, Streamlit, tests, Docker, and CI.
-
-## Suggested roadmap
-
-- Authentication and role-based access
-- PostgreSQL deployment and migrations
-- Email and calendar reminders
-- Document management and investor data rooms
-- Configurable scoring models by sector
-- AI-assisted investor brief generation
+Built by [Gelila Mulugeta](https://github.com/ahvi27).
